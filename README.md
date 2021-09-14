@@ -1,2 +1,3 @@
 # QULBIT-Thesis-Project
-QULBIT Network 
+
+QULBIT is the foundation of a new type of decision support system that deals with uncertainty using the formalisms of quantum mechanics. The main advantage of this framework is that it can capture human paradoxical and irrational decisions during the inference process, which can be very useful not only for cognitive systems, but also for decision-making systems that deal with human data. The quantum-like approach also enables the expression of a prediction using quantum interference effects. I will be working on this project to optimize and solve existing roadblocks with the current code with help of my supervisor Catarina Pinto Moreira.
