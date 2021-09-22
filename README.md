@@ -5,10 +5,15 @@ QULBIT is the foundation of a new type of decision support system that deals wit
 Meeting Minutes 10/09/2021:
 
 Discussion:
+
 	- Plan of attack for the rest of the semester.
+	
 	- What needs to be done in order to finish.
+	
 	- Planned regular meetings for every Friday.
+	
 	- Shared resources for the thesis.
+	
 Tasks:
 
 	- Create a GitHub repository and share it.
