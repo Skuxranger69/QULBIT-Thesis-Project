@@ -22,6 +22,7 @@ Tasks:
 	
 	- Dissect jupyter notebook and understand computations.
 	
+Reflection:
 
 Meeting Minutes 17/09/2021:
 
@@ -47,3 +48,59 @@ Tasks:
 	
 	- Compute superposition, density and partial trace.
 	
+Reflection:
+
+
+Meeting Minutes 08/10/2021:
+
+Discussion:
+
+Tasks:
+
+	- Create a function that can 0 zero out the interferences.
+	
+	- Max diabetes network set to max of cosine = cos(0)
+	
+	- Min diabetes network set max of cosine = cos(theta)=1
+	
+	- Compare the two parameters.
+	
+	- Experiment 1:
+	
+		Set all interference terms to the maximum: cos( theta ) = 1
+		
+		Theta = 0
+		
+		Load the diabetes dataset
+		
+		Learn the BN of this dataset
+		
+		Compute the density matrix
+		
+		Compute the marginal for Pr( Diabetes = True )
+		
+	- Experiment 2:
+	
+		Set all interference terms to the maximum: cos( theta ) = 1
+		
+		Theta = 0
+		
+		Load the diabetes dataset
+		
+		Learn the BN of this dataset
+		
+		Compute the density matrix
+		
+		Compute the marginal for Pr( Diabetes = True )
+		
+		Exactly the same but with the interference corresponding to the minimum
+		
+		Cos ( theta ) = - 1
+		
+	- Check file_disc.csv for diabetes dataset.
+
+	- Goal: QProb( Diabetes = t ) = [ prob_min , prob_max], QProb( Diabetes = t | BMI > 30 )
+	
+	- Try parallelize code to work.
+
+Reflection: 
