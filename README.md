@@ -1,106 +1,36 @@
-# QULBIT-Thesis-Project
+# QuLBIT - Quantum-Like Bayesian Inference Technologies
 
-QULBIT is the foundation of a new type of decision support system that deals with uncertainty using the formalisms of quantum mechanics. The main advantage of this framework is that it can capture human paradoxical and irrational decisions during the inference process, which can be very useful not only for cognitive systems, but also for decision-making systems that deal with human data. The quantum-like approach also enables the expression of a prediction using quantum interference effects. I will be working on this project to optimize and solve existing roadblocks with the current code with help of my supervisor Catarina Pinto Moreira.
+QuLBIT is the foundation of a new type of decision support system that deals with uncertainty using the formalisms of quantum mechanics. The main advantage of this framework is that it can capture human paradoxical and irrational decisions during the inference process, which can be very useful not only for cognitive systems, but also for decision-making systems that deal with human data. The quantum-like approach also enables the expression of a prediction using quantum interference effects.
 
-Meeting Minutes 10/09/2021:
+<img src="img/logo.png" />
 
-Discussion:
+This framework is currently structured in terms of modules in a clear, well-defined, and extendible architecture. All these modules correspond to models that have been published in different journals. We kindly ask to cite the papers connected to each module that you find useful for your research:
 
-	- Plan of attack for the rest of the semester.
+* **Quantum-Like Bayesian Networks Module**
 	
-	- What needs to be done in order to finish.
+	* Catarina Moreira and Andreas Wichert (2016), <a href="http://journal.frontiersin.org/article/10.3389/fpsyg.2016.00011/abstract">**Quantum-Like Bayesian Networks for Modeling Decision Making**</a>, *Frontiers in Psychology: Cognition*, 7.
+	* Catarina Moreira and Andreas Wichert, <a href="http://journal.frontiersin.org/article/10.3389/fpsyg.2016.00011/abstract">**Interference Effects in Quantum Belief Networks**</a>, *Applied Soft Computing*, 25, 64-85, 2014
 	
-	- Planned regular meetings for every Friday.
-	
-	- Shared resources for the thesis.
-	
-Tasks:
+	<img src="img/quantum_bn_QuLBiT.png" with="200" />
 
-	- Create a GitHub repository and share it.
-	
-	- Research QLBN papers and familiarise with content again.
-	
-	- Dissect jupyter notebook and understand computations.
-	
-Reflection:
+* **Quantum-Like Influence Diagrams Module**
+	*  Catarina Moreira and Andreas Wichert (2018), <a href="http://cmoreira.eu/pdfs/conferences/QI_2018.pdf">**Introducing Quantum-Like Influence Diagrams for Violations of the Sure Thing Principle**</a>, *In Proceedings of the 11th International Conference on Quantum Interactions*.
 
-Meeting Minutes 17/09/2021:
+ <img src="img/influence_diagr_tversky.png" width="100%"  />
+	
 
-Discussion:
+* **Quantum Interference Effects Module**
 
-	- GitHub repository set up and requirements.
+   **Law of Balance:**
+	* Andreas Wichert and Catarina Moreira (2018), <a href="http://cmoreira.eu/pdfs/conferences/short16.pdf">**Balanced Quantum-Like Model for Decision Making**</a>, *In Proceedings of the 11th International Conference on Quantum Interactions* 
 	
-	- Setting up of ReadME.md file.
+	<img src="img/law_balance.png" width="100%"  />
 	
-	- Documenting meeting minutes in ReadME.md file.
+	**Similarity Heuristic:**
 	
-	- Revise theory and mathematics of QULBIT notebook (JPM, Density Matrix/Operators, Superpositions, etc).
-	
-Tasks:
+	* Catarina Moreira and Andreas Wichert (2016), <a href="http://journal.frontiersin.org/article/10.3389/fpsyg.2016.00011/abstract">**Quantum-Like Bayesian Networks for Modeling Decision Making**</a>, *Frontiers in Psychology: Cognition*, 7.
 
-	- Calculate minimum and maximum interference of a Diabetes dataset.
-	
-	- Put through a linear solver.
-	
-	- Load shafir.trevsky dataset.
-	
-	- Do classical approach (Compute FJD, marginilisation).
-	
-	- Compute superposition, density and partial trace.
-	
-Reflection:
+   <img src="img/similarity_heuristic.png" width="100%"  />
+   
 
 
-Meeting Minutes 08/10/2021:
-
-Discussion:
-
-Tasks:
-
-	- Create a function that can 0 zero out the interferences.
-	
-	- Max diabetes network set to max of cosine = cos(0)
-	
-	- Min diabetes network set max of cosine = cos(theta)=1
-	
-	- Compare the two parameters.
-	
-	- Experiment 1:
-	
-		Set all interference terms to the maximum: cos( theta ) = 1
-		
-		Theta = 0
-		
-		Load the diabetes dataset
-		
-		Learn the BN of this dataset
-		
-		Compute the density matrix
-		
-		Compute the marginal for Pr( Diabetes = True )
-		
-	- Experiment 2:
-	
-		Set all interference terms to the maximum: cos( theta ) = 1
-		
-		Theta = 0
-		
-		Load the diabetes dataset
-		
-		Learn the BN of this dataset
-		
-		Compute the density matrix
-		
-		Compute the marginal for Pr( Diabetes = True )
-		
-		Exactly the same but with the interference corresponding to the minimum
-		
-		Cos ( theta ) = - 1
-		
-	- Check file_disc.csv for diabetes dataset.
-
-	- Goal: QProb( Diabetes = t ) = [ prob_min , prob_max], QProb( Diabetes = t | BMI > 30 )
-	
-	- Try parallelize code to work.
-
-Reflection: 
