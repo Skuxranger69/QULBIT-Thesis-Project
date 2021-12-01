@@ -1,6 +1,6 @@
 # QuLBIT - Quantum-Like Bayesian Inference Technologies
 
-QuLBIT is the foundation of a new type of decision support system that deals with uncertainty using the formalisms of quantum mechanics. The main advantage of this framework is that it can capture human paradoxical and irrational decisions during the inference process, which can be very useful not only for cognitive systems, but also for decision-making systems that deal with human data. The quantum-like approach also enables the expression of a prediction using quantum interference effects.
+This project consists of the work done by Dr. Catarina Moreira and I had used this for my thesis project where I needed to rationalize quantum bayesian technologies with real-world medical data. In this case I used a diabetes dataset from the UCL repository and computed the relevant systems within the framework of quantum-like bayesian networks and using her QuLBiT methodology. Please see QLBNAlex.ipynb and the Alex_Thesis.pdf to see the work I have managed to accomplish.
 
 <img src="img/logo.png" />
 
